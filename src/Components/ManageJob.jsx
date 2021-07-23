@@ -67,7 +67,7 @@ class ManageJob extends Component {
         var {task_list} = this.state;
         if(data.id === ""){
         data.id = this.randomData();
-        data.status = data.status === 'true'? true : false;
+        data.status = data.status === 'false'? false : true;
         task_list.push(data);
     }
     else{
